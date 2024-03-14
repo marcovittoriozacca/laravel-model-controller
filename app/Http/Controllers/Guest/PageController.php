@@ -10,7 +10,9 @@ class PageController extends Controller
 {
     public function index(){
 
-        $movies = Movie::all();
+        $MoviesTable = Movie::all();
+
+        $movies = $MoviesTable->toArray();
 
         return view('home', compact('movies'));
     }

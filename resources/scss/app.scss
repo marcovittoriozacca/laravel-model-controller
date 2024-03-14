@@ -3,4 +3,19 @@
 @import "partials/mixins";
 @import "partials/variables";
 
+.cursos-pointer{
+    cursor: pointer;
+}
+//movies style
+#movies{
+    figure{
+        overflow: hidden;
+        img{
+            transition: .2s transform ease-out;
+            &:hover{
+                transform: scale(110%);
+            }
+        }
+    }
+}
 
